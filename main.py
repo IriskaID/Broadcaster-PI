@@ -29,7 +29,7 @@ def music_search():
 def music_translate():
     frequency = input("Укажите необходимую частоту: ")
     print(f"Запустил трек на частоту{frequency}")
-    myCmd = os.popen(f'sudo ./pifm temp.wav {frequency} {speed_boof} stereo').read()
+    myCmd = os.popen(f'sudo /home/pi/python/radio/PiFm/./pifm temp.wav {frequency} {speed_boof} stereo').read()
     input()
 def menu():
     while True:
